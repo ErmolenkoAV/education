@@ -3,7 +3,7 @@
 #include "lib.h"
 
 std::string fullVersion() {
-  std::string version = std::to_string(PROJECT_VERSION_MAJOR) " + " 
+  auto version = std::to_string(PROJECT_VERSION_MAJOR) " + " 
                         std::to_string(PROJECT_VERSION_MINOR) " + " 
 		        std::to_string(PROJECT_VERSION_PATCH);
   return version;
