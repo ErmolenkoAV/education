@@ -3,7 +3,9 @@ include "version.h"
 #include "lib.h"
 
 std::string fullVersion() {
-  auto version = (PROJECT_VERSION_MAJOR) + "." + (PROJECT_VERSION_MINOR) + "." + (PROJECT_VERSION_PATCH);
+  auto version = std::to_string(PROJECT_VERSION_MAJOR) + "." + 
+                 std::to_string(PROJECT_VERSION_MINOR) + "." + 
+                 std::to_string(PROJECT_VERSION_PATCH);
   return version;
 }
 
