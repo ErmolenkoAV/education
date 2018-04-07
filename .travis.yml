@@ -2,6 +2,7 @@ language: cpp
 before_script:
   - sudo apt-get install libboost-test-dev -y
   - sudo apt-get install g++-arm-linux-gnueabi
+  - sudo apt-get install gcc-multilib
 script:
   - cmake .
   - cmake --build .
