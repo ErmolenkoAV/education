@@ -3,4 +3,5 @@
 #include "version.h"
 #include <string>
 
-std::string version();
+std::string fullVersion();
+int version();
