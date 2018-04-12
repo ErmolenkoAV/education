@@ -1,4 +1,5 @@
 #include "version.h"
+#include <stdlib.h>
 #include <string>
 #include "lib.h"
 
@@ -11,5 +12,5 @@ std::string fullVersion() {
 }
 
 int version() {
-  return PROJECT_VERSION_PATCH;
+  return atoi(PROJECT_VERSION_PATCH);
 }
