@@ -1,11 +1,12 @@
-include "version.h"
+#include "version.h"
 #include <string>
 #include "lib.h"
 
 std::string fullVersion() {
-  auto version = std::to_string(PROJECT_VERSION_MAJOR) + "." + 
-                 std::to_string(PROJECT_VERSION_MINOR) + "." + 
-                 std::to_string(PROJECT_VERSION_PATCH);
+  std::string prVrMj(PROJECT_VERSION_MAJOR);
+  std::string prVrMn(PROJECT_VERSION_MINOR);
+  std::string prVrPt(PROJECT_VERSION_PATCH);
+  auto version = prVrMj + "." + prVrMn + "." + prVrPt;
   return version;
 }
 
